@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://wallpapers.com/images/hd/deep-space-hd-1920-x-1080-byrzrxqf1vz32ndr.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f0f0f0;
+    position: relative;
+    min-height: 100vh;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.card {
+    background-color: rgba(20, 20, 20, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    color: #dddddd;
+}
+
+.card a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.home{
+  margin-top: 0%;
+  padding-top: 0%;
+  background-color: rgb(87, 75, 75);
+  text-decoration: none;
+  border-radius: 8px;
+  margin-left: 50%;
+  font-size: medium;
+  color: white;
+  border:10px solid black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home:hover{
+  border: 3px solid rgb(75, 75, 113);
+  color: white;
+}
