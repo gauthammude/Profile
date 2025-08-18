@@ -1,0 +1,121 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1477201389074-1863f668fac5?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 60px auto;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills-container h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #0ff;
+}
+
+.skill-category {
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  background: rgba(20, 20, 20, 0.7);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.skill-category h2 {
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+.skill-category h2 i {
+  margin-right: 10px;
+}
+
+.skill-category.language {
+  border-left: 5px solid #ff8c00;
+  box-shadow: inset 0 0 8px #ff8c00;
+}
+.skill-category.web {
+  border-left: 5px solid #00ff99;
+  box-shadow: inset 0 0 8px #00ff99;
+}
+.skill-category.database {
+  border-left: 5px solid #8e44ad;
+  box-shadow: inset 0 0 8px #8e44ad;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category ul li {
+  font-size: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 10px;
+  position: relative;
+}
+
+.skill-category ul li::before {
+  content: "★";
+  color: #00ffff;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.skill-category ul li:last-child {
+  border-bottom: none;
+}
+.home {
+    display: flex;
+    padding: 10px 22px;
+    background-color: #343a40; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home:hover {
+    background-color: #495057; 
+    transform: scale(1.05);
+    background-color:rgb(199, 149, 58) ;
+}
+
+.home:active {
+    transform: scale(0.97);
+    background-color: rgb(199, 149, 58);
+}
+
+@media (max-width: 600px) {
+    .home {
+        font-size: 0.95rem;
+        padding: 8px 18px;
+    }
+}
