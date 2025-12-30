@@ -1,0 +1,240 @@
+/* project.css */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #34495e;
+    margin: 20px 0 10px 0;
+    font-size: 1.4rem;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Project Titles */
+section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tech Stack Badges */
+section p strong {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    margin: 10px 0 20px 0;
+    box-shadow: 0 2px 5px rgba(52, 152, 219, 0.2);
+}
+
+/* Bullet Points */
+section > p {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    color: #555;
+}
+
+section > p:before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Links */
+.project {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: 5px 0;
+    box-shadow: 0 3px 10px rgba(52, 152, 219, 0.3);
+}
+
+.project:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+/* Multiple links styling */
+section a + br + a {
+    margin-top: 10px;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #3498db, transparent);
+    margin: 40px 0;
+}
+
+/* Home Button */
+.home {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    box-shadow: 0 3px 10px rgba(44, 62, 80, 0.3);
+}
+
+.home:hover {
+    background-color: #1a252f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project, .home {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    section p strong {
+        font-size: 0.85rem;
+        padding: 4px 12px;
+    }
+    
+    .project, .home {
+        padding: 10px 20px;
+    }
+}
+
+/* Animation for sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Staggered animation for sections */
+section:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+section:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+/* Link icons (optional - you can add Font Awesome for icons) */
+.project:after {
+    content: " ↗";
+    font-weight: bold;
+}
+
+/* Optional: Add a subtle pattern to the background */
+body {
+    background-image: 
+        radial-gradient(#3498db22 1px, transparent 1px),
+        radial-gradient(#2c3e5011 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+    }
+    
+    section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+    
+    .project, .home {
+        color: #3498db;
+        background-color: transparent;
+        box-shadow: none;
+        text-decoration: underline;
+        padding: 0;
+    }
+}
